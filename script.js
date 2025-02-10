@@ -55,6 +55,7 @@ const flight = {
   
   document.body.innerHTML += '<p> <strong> Startovní země: </strong> ' + flight.countryFrom.name + '</p>';
   document.body.innerHTML += '<p> <strong> Cílová země: </strong> ' + flight.countryTo.name + '</p>';
+  document.body.innerHTML += '<h2> <strong> ÚDAJE O PŘÍRUČNÍM ZAVAZADLE </strong>' + '</H2>';
   document.body.innerHTML += '<p> <strong> Maximální délka příručního zavazadla: </strong> ' + flight.baglimit.hand_length + ' cm </p>';
   document.body.innerHTML += '<p> <strong> Maximální šířka příručního zavazadla: </strong> ' + flight.baglimit.hand_width + ' cm </p>';
   document.body.innerHTML += '<p> <strong> Maximální výška příručního zavazadla: </strong> ' + flight.baglimit.hand_height + ' cm </p>';
@@ -62,5 +63,5 @@ const flight = {
   
   const secondBagPrice = Math.ceil (flight.bags_price[2] * 25);
   
-  
+  document.body.innerHTML += '<h2> <strong> DRUHÉ ZAVAZADLO </strong>' + '</h2>';
   document.body.innerHTML += '<p> <strong> Cena za druhé zavazadlo je: </strong> ' + secondBagPrice + ' Kč </p>';
